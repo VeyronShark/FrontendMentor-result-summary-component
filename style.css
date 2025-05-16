@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutral */
+  --color-paleBlue: hsl(221, 100%, 96%); 
+  --color-lightLavender: hsl(241, 100%, 89%);
+  --color-darkGrayBlue: hsl(224, 30%, 27%);
+
+  /* Primary */
+  --color-lightRed: hsl(0, 100%, 67%);
+  --color-lightRedBg: hsla(0, 100%, 67%, 0.1);
+  --color-orangeyYellow: hsl(39, 100%, 56%);
+  --color-orangeyYellowBg: hsla(39, 100%, 56%, 0.1);
+  --color-greenTeal: hsl(166, 100%, 37%);
+  --color-greenTealBg: hsla(166, 100%, 37%, 0.1);
+  --color-cobaltBlue: hsl(234, 85%, 45%);
+  --color-cobaltBlueBg: hsla(234, 85%, 45%, 0.1);
+
+  /* Gradients */
+  --color-lightSlateBlue: hsl(252, 100%, 67%);
+  --color-lightRoyalBlue: hsl(241, 81%, 54%);
+  --color-violetBlue: hsla(256, 72%, 46%, 1);
+  --color-persianBlue: hsla(241, 72%, 46%, 0);
+
+  /* Font family */
+  --font-sans: "Hanken Grotesk", sans-serif;
+}
+
+@layer components {
+  .display-container {
+    @apply flex justify-between text-lg font-bold p-4 rounded-xl;
+  }
+  .display-container .name {
+    @apply flex;
+  }
+  .display-container .name img {
+    margin-right: 1rem;
+  }
+  .display-container .score{
+    @apply text-darkGrayBlue;
+  }
+}
+
+.result-score::after {
+  content: "of 100";
+  font-size: 1rem;
+  position: absolute;
+  opacity: 0.5;
+  bottom: 15%;
+}
+
+.score::after {
+  margin-left: 0.2rem;
+  content: " / 100";
+  opacity: 0.6;
+}
+
+@media (min-width: 768px){
+  .result-score::after {
+    bottom: 20%;
+    font-size: 1.2rem;
+  }
+}
+

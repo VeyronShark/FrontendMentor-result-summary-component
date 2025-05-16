@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Result Summary</title>
+</head>
+<body class="bg-paleBlue flex justify-center items-start h-screen font-sans text-white md:items-center">
+  <section id="result-summary-container" class="bg-white flex flex-col md:flex-row md:rounded-4xl w-screen md:w-1/2">
+    <!-- Result -->
+    <div class="result bg-linear-to-b from-lightSlateBlue to-lightRoyalBlue flex flex-col items-center px-15 pt-6 md:pt-9 rounded-b-4xl md:rounded-t-4xl md:w-1/2">
+      <div class="result-heading text-lg opacity-80 font-medium md:text-2xl">Your Result</div>
+
+      <div class="result-score relative bg-linear-to-b from-violetBlue to-persianBlue w-35 h-35 rounded-full flex justify-center pt-9 text-6xl font-bold my-6 md:h-54 md:w-54 md:text-7xl md:pt-16 md:my-10">76</div>
+
+      <div class="result-keyword text-2xl font-medium mb-2 md:text-4xl md:mb-4">Great</div>
+
+      <div class="result-desc text-center opacity-70 mb-10 md:text-lg md:mb-15">You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary p-8 md:p-11 md:w-1/2">
+      <div class="summary-heading text-darkGrayBlue text-xl/none font-bold md:text-2xl">Summary</div>
+
+      <!-- Summary display container -->
+      <div class="summary-display flex flex-col gap-4 my-6 md:gap-5 md:my-8">
+        <!-- Reaction container -->
+        <div class="display-container bg-lightRedBg" id="reaction">
+          <div class="name text-lightRed"><img src="./assets/images/icon-reaction.svg">Reaction</div>
+
+          <div class="score">80</div>
+        </div>
+
+        <!-- Memory container -->
+        <div class="display-container bg-orangeyYellowBg" id="memory">
+          <div class="name text-orangeyYellow"><img src="./assets/images/icon-memory.svg">Memory</div>
+
+          <div class="score">92</div>
+        </div>
+
+        <!-- Verbal container -->
+        <div class="display-container bg-greenTealBg" id="verbal">
+          <div class="name text-greenTeal"><img src="./assets/images/icon-verbal.svg">Verbal</div>
+
+          <div class="score">61</div>
+        </div>
+
+        <!-- Visual container -->
+        <div class="display-container bg-cobaltBlueBg" id="visual">
+          <div class="name text-cobaltBlue"><img src="./assets/images/icon-visual.svg">Visual</div>
+
+          <div class="score">73</div>
+        </div>
+      </div>
+
+      <div class="summary-continue bg-darkGrayBlue from-lightSlateBlue to-lightRoyalBlue text-center py-4 text-lg rounded-full font-medium duration-200 cursor-pointer hover:bg-linear-to-b md:mt-12">Continue</div>
+    </div>
+  </section>
+</body>
+</html>
