@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [View repo](https://github.com/VeyronShark/FrontendMentor-result-summary-component)
+- Live Site URL: [View site](https://veyronshark.github.io/FrontendMentor-result-summary-component/)
 
 ## My process
 
